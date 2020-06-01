@@ -9,11 +9,15 @@
 #   - You can enter hostnames or ip addresses
 #   - A hostname/ip can be a member of multiple groups
 
-[anygroup]
-server1     ansible_host=192.168.0.1
-server2     ansible_host=192.168.0.2
-server3     ansible_host=192.168.0.3
-server4     ansible_host=192.168.0.4
+#[anygroup]
+#server1     ansible_host=192.168.0.1
+#server2     ansible_host=192.168.0.2
+#server3     ansible_host=192.168.0.3
+#server4     ansible_host=192.168.0.4
+
+[rancher]
+rancher-control  ansible_host=192.168.26.114
+rancher-worker   ansible_host=192.168.26.115
 
 # Add your own groups here. Hosts can be added to multiple groups like so:
 # [anothergroup]
